@@ -64,6 +64,7 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-headrer-conteiner {
@@ -80,7 +81,7 @@ img {
     font-size: 18px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    /* margin: 24px 76px 24px auto; */
+ 
     margin-right: 76px;
 }
 
@@ -147,8 +148,10 @@ img {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
-
-
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -181,8 +184,6 @@ img {
     border-radius: 4px;
     border: 0;
 
-
-
     display: block;
     margin: 0 auto;
 
@@ -198,7 +199,16 @@ img {
 }
 
 /* --------------------Advantages ---------------------*/
-
+.svg-conteiner {
+    padding: 0;
+    border: none;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4F4FD;
+}
 
 .section-title {
     color: var(--title-text-color);
@@ -272,14 +282,101 @@ img {
     margin-bottom: 8px;
 }
 
-/* footer */
-.footer {
-    background-color: #2E2F42;
+.team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    padding: 0px;
+    margin-top: 8px;
+    margin-left: 16px;
+    gap: 24px;
+
+    width: 232px;
+    height: 40px;
+}
+
+.team-list-svg {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.team-list-svg:hover {
+    background-color: #404BBF;
+}
+
+.team-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+}
+
+.customers-section {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-conteiner {
+    width: 1128px;
+    height: 200px;
+}
+
+.list-customers {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 24px;
+}
+
+.logo-item {
+    width: 168px;
+    height: 88px;
+}
+
+.logo-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: gray;
+
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.logo-customers:hover {
+    color: #404BBF;
+    border: 1px solid #404BBF;
+}
+
+
+
+.logo-icon {
+    fill: currentColor;
+}
+
+/* ---------------footer---------------- */
+
+.footer {
+    display: flex;
+    background-color: #2E2F42;
+   
     padding-top: 100px;
     padding-bottom: 100px;
-    align-content: flex-start;
+   
 }
+
+.footer-conteiner {
+    padding: 0;
+    margin-left: 156px;
+    margin-right: 120px;
+
+}
+
 
 .footer-link {
     font-family: 'Raleway';
@@ -296,6 +393,46 @@ img {
 .footer-text {
     color: #E7E9FC;
     width: 264px;
+}
+
+.social-section {
+    padding: 0;
+    margin: 0;
+    width: 208px;
+    height: 80px;
+
+}
+
+
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 16px;
+    padding: 0px;
+    gap: 16px;
+    height: 40px;
+
+}
+
+.social-item {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+}
+
+
+.social-item:hover {
+    background: #31D0AA;
 }
 
 /* ----------------Navigation filter----------------- */
@@ -342,6 +479,7 @@ img {
 
     border-radius: 4px;
     border-color: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cards-wrapper {
@@ -349,11 +487,11 @@ img {
     flex-wrap: wrap;
     gap: 48px;
     column-gap: 24px;
-
-
 }
 
-.wrapper-border {}
+.link-wrapper:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 
 .border {
@@ -361,7 +499,5 @@ img {
     border: 1px solid #E7E9FC;
     border-top: 0;
     padding: 32px 16px;
-
-
 
 }
