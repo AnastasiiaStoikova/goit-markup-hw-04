@@ -270,7 +270,7 @@ img {
 }
 
 .bgr-color {
-    width: 1440px;
+    width: 264px;
     background-color: #ffffff;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -353,6 +353,7 @@ img {
 
 .logo-customers:hover,
 .logo-customers:focus {
+    border-color: #404BBF;
     color: #404BBF;
     border: 1px solid #404BBF;
 }
@@ -415,6 +416,7 @@ img {
 .social-text {
     font-weight: 500;
     line-height: 24px;
+    line-height: 1.5;
     color: #FFFFFF;
     margin-bottom: 16px;
 }
